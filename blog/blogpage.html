@@ -35,7 +35,7 @@
         style="height: 50px; width: 50px; margin-right: 10px"
       />
       <a href="#" class="logo" style="margin-inline-end: auto"
-        ><h3>AgriLearnNetwork</h3>
+        ><h3>AgroAssist</h3>
       </a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -50,16 +50,6 @@
         <a href="../index.html#Resource Library"
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
-        <a href="../FAQS/faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQ</a>
-        <a href="../index.html#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-        <a href="../buyproducts/buy_products.html"
-            ><i class="fa fa-shopping-cart"></i>Buy Products</a
-          >
-        <a href="../login/login.html">
-          <button id="log-in-btn" class="login-btn">Login</button>
-        </a>
       </nav>
      
     </header>
@@ -402,31 +392,7 @@
     <footer class="footer">
       <div  class="footer-grid">
         <div class="footer-title">
-          <h2>AgriLearnNetwork</h2>
-        </div>
-        <div class="footer-icons">
-          <p><b>Follow us on our socials:</b></p>
-          <div class="socialIcons">
-            <a
-              href="mailto:AgriLearnNetwork@gmail.com"
-              class="email-link"
-              data-tooltip="AgriLearnNetwork@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/your_username_here"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://twitter.com/your_username_here" target="_blank"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/your_page_or_profile_here"
-              target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </div>
+          <h2>AgroAssist</h2>
         </div>
       </div>
       <div class="quick-links">
@@ -441,18 +407,9 @@
           <li>
             <a href="blogpage.html"><p>Blogs</p></a>
           </li>
-          <li>
-            <a href="../FAQS/faqpage.html"><p>FAQs</p></a>
-          </li>
-          <li>
             <a href="../index.html#Resource Library"><p>Resource Library</p></a>
           </li>
-          <li>
-            <a href="../index.html#contact"><p>Contact Us</p></a>
-          </li>
-          <li>
-            <a href="../buyproducts/buy_products.html"><p>Buy Products</p></a>
-          </li>
+
         </ul>
       </div>
       <div class="footer-text footer-right">
@@ -460,7 +417,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          by AgriLearnNetwork | All Rights Reserved.
+          by AgroAssist | All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -493,9 +450,36 @@
       document.addEventListener("mousemove",function(e){
         cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
       });
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./scrollreveal.js"></script>
+
+      // theme toggle control
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.querySelector(".theme-toggle");
+        const body = document.body;
+        console.log(themeToggle)
+
+        // Load the saved theme from local storage and apply it
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme && savedTheme === "dark") {
+          body.classList.add("dark-theme");
+        }
+
+        themeToggle.addEventListener("click", function () {
+          body.classList.toggle("dark-theme");
+
+          // Save the current theme in local storage
+          if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
+
+
+
+     </script>
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="./scrollreveal.js"></script>
 
    
   </body>

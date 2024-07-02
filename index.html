@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgriLearnNetwork</title>
+    <title>AgroAssist</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -45,11 +45,6 @@
 
   <body>
   
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-  </div>
     <header class="header">
       <img
         src="icon.png"
@@ -57,7 +52,7 @@
         style="height: 50px; width: 50px; margin-right: 10px;"
       />
       <a href="#" class="logo" style="margin-inline-end: auto"
-        ><h3>AgriLearnNetwork</h3>
+        ><h3>AgroAssist</h3>
       </a>
       
       <!-- adding the toggle mode button -->
@@ -80,16 +75,6 @@
         <a href="#Resource Library"
           ><i class="fa-solid fa-book"></i> Resource Library</a
         >
-        <a href="./FAQS/faqpage.html" target="_self"><i class="fas fa-question-circle"></i>FAQs</a>
-        <a href="#contact" id="nav--contact"
-          ><i class="fa-solid fa-phone"></i> Contact</a
-        >
-        <a href="./buyproducts/buy_products.html"
-            ><i class="fa fa-shopping-cart"></i>Buy Products</a
-          >
-        <a href="./login/login.html">
-          <button id="log-in-btn" class="login-btn">Login</button>
-        </a>
       </nav>
     </header>
 
@@ -97,7 +82,7 @@
       <div class="slider">
         <div class="home-content content glow">
           <h3 class="home--welcome">Welcome to</h3>
-          <h1 class="home--welcome">AgriLearnNetwork</h1>
+          <h1 class="home--welcome">AgroAssist</h1>
           <h3 class="home--welcome">
             Your Agricultural Knowledge Hub to
             <span class="multiple-text un "></span>
@@ -280,86 +265,6 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <h1 id="testi">OUR TESTIMONIALS</h1>
-    <div class="wrapper">
-      <script src="./testimonials/testimonials.js" defer></script>
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      
-      <ul class="carousel">
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" draggable="false"></div>
-          <h2 id="testnames">Blanche Pearson</h2>
-          <span>AgriLearnNetwork has revolutionized my farming practices with its easy-to-follow sustainable methods. The community support is amazing!</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" draggable="false"></div>
-          <h2 id="testnames">Anna Kolson</h2>
-          <span>This website is a treasure trove of knowledge for eco-friendly farming. The guides are detailed and practical. Highly recommend!</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="img" draggable="false"></div>
-          <h2 id="testnames">Lariach French</h2>
-          <span>I’m thrilled with the results after using AgriLearnNetwork’s resources. The community is supportive, and the content is top-notch.</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" draggable="false"></div>
-          <h2 id="testnames">James Khosravi</h2>
-          <span>Thanks to AgriLearnNetwork, I’ve seen a significant improvement in my crop yields and soil health. A must-visit for every farmer.</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/732425/pexels-photo-732425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" draggable="false"></div>
-          <h2 id="testnames">Kristina Zasiadko</h2>
-          <span>AgriLearnNetwork’s expert advice has been a game-changer for my farm. The step-by-step guides make sustainable farming accessible to all.</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" draggable="false"></div>
-          <h2 id="testnames">Donald Horton</h2>
-          <span>Implementing the practices from AgriLearnNetwork has been a breeze. The positive impact on my farm’s productivity is undeniable.</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" draggable="false"></div>
-          <h2 id="testnames">Kriti Chauhan</h2>
-          <span>AgriLearnNetwork offers the best tips and tricks for sustainable farming. It’s an essential resource for modern farmers looking to go green.
-
-            
-            
-            
-            
-            
-            
-            
-            </span>
-        </li>
-      </ul>
-      <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Us!</span></h2>
-      <form action="#" id="contact-form">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" id="fullname" required />
-          <input type="email" placeholder="Email Address" id="emailaddress" required />
-        </div>
-
-        <div class="input-box">
-          <input
-            type="number"
-            placeholder="Mobile Number"
-            required
-            id="mobileNumber"
-          />
-          <input type="text" placeholder="Email Subject" id="emailsubject" required />
-        </div>
-
-        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" class="btn" id="contact-btn"><br>
-        </form>
-        <div class="button-container">
-          <button id="review-btn">Give feedback</button>
-        </div>
-    </section>
 
     <!-- Modal -->
 
@@ -470,35 +375,6 @@
     </style>
     
     <footer class="footer">
-      <div class="footer-grid">
-        <div class="footer-title">
-          <h2>AgriLearnNetwork</h2>
-        </div>
-        <div class="footer-icons">
-          <p><b>Follow us on our socials:</b></p>
-          <div class="socialIcons">
-            <a
-              href="mailto:AgriLearnNetwork@gmail.com"
-              class="email-link"
-              data-tooltip="AgriLearnNetwork@gmail.com"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/your_username_here"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://twitter.com/your_username_here" target="_blank"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/your_page_or_profile_here"
-              target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </div>
-        </div>
-      </div>
       <div class="quick-links">
         <h2>Quick Links</h2>
         <ul>
@@ -512,16 +388,7 @@
             <a href="./blog/blogpage.html"><p>Blogs</p></a>
           </li>
           <li>
-            <a href="./FAQS/faqpage.html"><p>FAQs</p></a>
-          </li>
-          <li>
             <a href="#Resource Library"><p>Resource Library</p></a>
-          </li>
-          <li>
-            <a href="#contact"><p>Contact Us</p></a>
-          </li>
-          <li>
-            <a href="./buyproducts/buy_products.html"><p>Buy Products</p></a>
           </li>
         </ul>
       </div>
@@ -531,7 +398,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          by AgriLearnNetwork | All Rights Reserved.
+          by AgroAssist | All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -603,23 +470,6 @@
           mobileNumberInput.value = value.slice(0, maxLength);
         }
       });
-    </script>
-    <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
-    <script type="text/javascript">
-      (function (d, t) {
-        var v = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        v.onload = function () {
-          window.voiceflow.chat.load({
-            verify: { projectID: "664632efd181ce0921d32ed5" },
-            url: "https://general-runtime.voiceflow.com",
-            versionID: "production",
-          });
-        };
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-        v.type = "text/javascript";
-        s.parentNode.insertBefore(v, s);
-      })(document, "script");
     </script>
 
     <script type="text/javascript">
