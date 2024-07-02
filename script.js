@@ -145,62 +145,62 @@ const typed=new Typed('.multiple-text',{
     loop:true
 
 });
-const form = document.getElementById('contact-form');
+// const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();
 
-  // Access form fields
-  const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
-  const email = form.querySelector('input[placeholder="Email Address"]').value.trim();
-  const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
-  const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
-  const message = form.querySelector('textarea').value.trim();
-  // const alertBox = document.getElementById('alertBox');
-  // alertBox.classList.remove('hidden');
-  // Validation
-  const nameRegex = /^[A-Za-z]{2,50}(?: [A-Za-z]{2,50})*$/;
-  if (!nameRegex.test(fullName)) {
-    swal({
-      title: "Custom Styled Alert",
-      text: "This alert has been styled with custom CSS.",
-      icon: "info",
-      button: "Awesome!"
-    })
-    swal("Try Again!","Please enter your full name.","warning");
-    return;
-  }
+//   // Access form fields
+//   const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
+//   const email = form.querySelector('input[placeholder="Email Address"]').value.trim();
+//   const mobileNumber = form.querySelector('input[placeholder="Mobile Number"]').value.trim();
+//   const emailSubject = form.querySelector('input[placeholder="Email Subject"]').value.trim();
+//   const message = form.querySelector('textarea').value.trim();
+//   // const alertBox = document.getElementById('alertBox');
+//   // alertBox.classList.remove('hidden');
+//   // Validation
+//   const nameRegex = /^[A-Za-z]{2,50}(?: [A-Za-z]{2,50})*$/;
+//   if (!nameRegex.test(fullName)) {
+//     swal({
+//       title: "Custom Styled Alert",
+//       text: "This alert has been styled with custom CSS.",
+//       icon: "info",
+//       button: "Awesome!"
+//     })
+//     swal("Try Again!","Please enter your full name.","warning");
+//     return;
+//   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    swal("Try Again!","Please enter a valid email.","warning");
-    return;
-  }
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   if (!emailRegex.test(email)) {
+//     swal("Try Again!","Please enter a valid email.","warning");
+//     return;
+//   }
 
-  const mobileRegex = /^\+?(\d{1,3})?[-.\s]?(\(?\d{3,4}\)?[-.\s]?)?\d{3}[-.\s]?\d{3,4}$/;
-  if (!mobileRegex.test(mobileNumber)) {
-    swal("Try Again!","Please enter a valid mobile number.","warning");
-    return;
-  }
+//   const mobileRegex = /^\+?(\d{1,3})?[-.\s]?(\(?\d{3,4}\)?[-.\s]?)?\d{3}[-.\s]?\d{3,4}$/;
+//   if (!mobileRegex.test(mobileNumber)) {
+//     swal("Try Again!","Please enter a valid mobile number.","warning");
+//     return;
+//   }
 
-  const emailSubjectRegex = /^[\w\s\p{P}]{10,90}$/;
-  if (!emailSubjectRegex.test(emailSubject)) {
-    swal("Try Again!","Please enter email subject.","warning");
-    return;
-  }
+//   const emailSubjectRegex = /^[\w\s\p{P}]{10,90}$/;
+//   if (!emailSubjectRegex.test(emailSubject)) {
+//     swal("Try Again!","Please enter email subject.","warning");
+//     return;
+//   }
 
-  if (!message) {
-    swal("Try Again!","Please enter your message.","warning");
-    return;
-  }
+//   if (!message) {
+//     swal("Try Again!","Please enter your message.","warning");
+//     return;
+//   }
 
-  // form reset
-  else {
-    form.reset();
-    swal("Message received!", "We will get back to you in no time.","success");
+//   // form reset
+//   else {
+//     form.reset();
+//     swal("Message received!", "We will get back to you in no time.","success");
     
-  }
-});
+//   }
+// });
  
 
 
@@ -208,15 +208,15 @@ form.addEventListener('submit', (event) => {
   let modal = document.getElementById("modal");
   
   
-  let reviewBtn = document.getElementById("review-btn");
+  // let reviewBtn = document.getElementById("review-btn");
   
   let span = document.getElementsByClassName("close")[0];
   
   
-  reviewBtn.onclick = function(e) {
-    e.preventDefault();
-      modal.style.display = "flex";
-  }
+  // reviewBtn.onclick = function(e) {
+  //   e.preventDefault();
+  //     modal.style.display = "flex";
+  // }
   
   
   span.onclick = function() {
@@ -328,25 +328,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 500)
 });
 
-const loginRegisterBtn = document.getElementById('log-in-btn');
+// const loginRegisterBtn = document.getElementById('log-in-btn');
   let islogInMode = true;
 
   // Change text on hover
-loginRegisterBtn.addEventListener('mouseover', () => {
-  if (islogInMode) {
-    loginRegisterBtn.textContent = 'Register';
-  } else {
-    loginRegisterBtn.textContent = 'Login In';
-  }
-});
+// loginRegisterBtn.addEventListener('mouseover', () => {
+//   if (islogInMode) {
+//     loginRegisterBtn.textContent = 'Register';
+//   } else {
+//     loginRegisterBtn.textContent = 'Login In';
+//   }
+// });
 
-loginRegisterBtn.addEventListener('mouseout', () => {
-  if (islogInMode) {
-    loginRegisterBtn.textContent = 'Login';
-  } else {
-    loginRegisterBtn.textContent = 'Register';
-  }
-});
+// loginRegisterBtn.addEventListener('mouseout', () => {
+//   if (islogInMode) {
+//     loginRegisterBtn.textContent = 'Login';
+//   } else {
+//     loginRegisterBtn.textContent = 'Register';
+//   }
+// });
 
 
 // new faq
@@ -394,19 +394,19 @@ function closeAllAccordions(clickedAccordion) {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const faqSection = document.querySelector('../faq .section-heading');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const faqSection = document.querySelector('../faq .section-heading');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        faqSection.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         faqSection.classList.add('visible');
+//       }
+//     });
+//   }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
 
-  observer.observe(faqSection);
-});
+//   observer.observe(faqSection);
+// });
 
 // mode toggle function
       document.addEventListener("DOMContentLoaded", function () {
